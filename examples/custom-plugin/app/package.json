@@ -11,12 +11,12 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@tauri-apps/api": "^2.11.1",
+    "@tauri-apps/api": "3.0.0-alpha.2",
     "solid-js": "^1.9.14",
     "tauri-specta-custom-plugin": "workspace:*"
   },
   "devDependencies": {
-    "@tauri-apps/cli": "^2.11.4",
+    "@tauri-apps/cli": "3.0.0-alpha.4",
     "typescript": "^7.0.2",
     "vite": "^8.1.4",
     "vite-plugin-solid": "^2.11.12"

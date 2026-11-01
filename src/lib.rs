@@ -13,8 +13,8 @@
 //! To get started run the following commands to add the required dependencies to your `Cargo.toml`:
 //!
 //! ```sh
-//! cargo add tauri@2.0 specta@=2.0.0-rc.25 specta-typescript@0.0.12
-//! cargo add tauri-specta@=2.0.0-rc.25 --features derive,typescript,javascript # `javascript` for JSDoc, `typescript` for Typescript
+//! cargo add tauri@=3.0.0-alpha.4 specta@=2.0.0-rc.26 specta-typescript@=0.0.13
+//! cargo add tauri-specta --git https://github.com/MegalithOfficial/tauri-specta --features derive,typescript,javascript
 //! ```
 //!
 //! ## Features
@@ -77,7 +77,7 @@
 //! ```rust
 //! use specta_typescript::JSDoc;
 //!
-//! let mut builder = tauri_specta::Builder::<tauri::Wry>::new();
+//! let mut builder = tauri_specta::Builder::<tauri::DynRuntime>::new();
 //!
 //! #[cfg(debug_assertions)]
 //! builder
@@ -106,7 +106,7 @@
 //! }
 //!
 //! // Call `typ()` as much as you want.
-//! let mut builder = tauri_specta::Builder::<tauri::Wry>::new().typ::<MyStruct>();
+//! let mut builder = tauri_specta::Builder::<tauri::DynRuntime>::new().typ::<MyStruct>();
 //! ```
 //!
 //! ## Events
@@ -238,7 +238,7 @@
 //! ```rust
 //! use tauri_specta::{Builder, Casing};
 //!
-//! let mut builder = Builder::<tauri::Wry>::new()
+//! let mut builder = Builder::<tauri::DynRuntime>::new()
 //!     // Keep the original Rust naming for command and event accessors.
 //!     .function_casing(Casing::SnakeCase);
 //! ```

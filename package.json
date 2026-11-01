@@ -3,6 +3,11 @@
   "version": "0.0.0",
   "scripts": {},
   "dependencies": {
-    "@tauri-apps/api": "^2.11.1"
-  }
+    "@tauri-apps/api": "3.0.0-alpha.2"
+  },
+  "workspaces": [
+    "examples/app",
+    "examples/tanstack-query",
+    "examples/custom-plugin/*"
+  ]
 }

@@ -1,3 +1,5 @@
+This fork targets Tauri 3 alpha and supports both CEF and wry through Tauri's runtime independent APIs. The application selects its runtime; binding export and plugin registration use `tauri::DynRuntime` or the application's explicit runtime type. The upstream Specta rc.26 dependency remains pinned to the workspace revision until it is published.
+
 <div align="center">
     <img height="150" src=".github/logo.png" alt="Specta Logo"></img>
     <h1>Tauri Specta</h1>
@@ -33,7 +35,7 @@ Run the example:
 ```bash
 pnpm i
 cd examples/app/
-pnpm tauri dev
+bun run tauri dev
 ```
 
 ### Running tests
